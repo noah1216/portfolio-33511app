@@ -1,0 +1,103 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.main-header{
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-menu{
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu-list{
+  display: flex;
+  padding: 40px 40px 0 0;
+}
+
+body, html, main {
+  /* important */
+  height: 100%;
+}
+
+.menu-list li{
+  margin-left: 25px;
+}
+
+.menu-list li a{
+  color: rgb(156, 140, 85);
+  text-decoration: none;
+}
+
+.menu-list li a:hover {
+  color: rgb(197, 180, 123);
+  text-decoration: none;
+  }
+
+.cd-fixed-bg {
+  min-height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.cd-fixed-bg.cd-bg-1 {
+background-image: url("home-main-image.png");
+}
+.cd-fixed-bg.cd-bg-2 {
+  background-image: url("home-main-2.png");
+}
+.cd-fixed-bg.cd-bg-3 {
+  background-image: url("mama.jpeg");
+}
+.cd-fixed-bg.cd-bg-4 {
+  background-image: url("mama.jpeg");
+}
+
+.cd-scrolling-bg {
+  min-height: 100%;
+}
+
+
+.cd-color-1{
+  background-color: rgb(233, 233, 233);
+}
+
+
+
+.cd-container{
+  padding: 40px 200px;
+}
+
+.about{
+  color: rgb(156, 140, 85);
+  font-size: 60px;
+  text-align: center;
+  letter-spacing: 7px;
+}
+
+.comment{
+  display: flex;
+  justify-content: space-between;
+}
+
+.english-name{
+  font-size: 30px;
+  padding-top: 30px;
+  letter-spacing: 5px;
+}
+
+.name{
+  font-size: 16px;
+  letter-spacing: 5px;
+}
