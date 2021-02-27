@@ -1,5 +1,5 @@
 
-<div class='main-header'>
+<div class='main-header fade-in-bottom'>
     <div class='main-menu'>
         <ul class="menu-list">
             <li><a href="#TOP">TOP</a></li>
@@ -10,39 +10,87 @@
     </div>
 </div> 
 <main>
-    <div class="cd-fixed-bg cd-bg-1"  id="TOP">
-        <h1></h1>
+    <div class="cd-fixed-bg cd-bg-1 head-padding"  id="TOP">
+        <h1 class="Headline fade-in-bottom animation-start">NoYah,s</h1>
+        <h1 class="Headline-mini fade-in-bottom animation-start">code</h1>
     </div> 
 
 
     <div class="cd-scrolling-bg cd-color-1" id="ABOUT">
         <div class="cd-container">
-            <h1 class="about" >
+            <h1 class="about fade-in-bottom" >
                 ABOUT
             </h1>
         </div>
-        <div class="comment cd-container">
+        <div class="comment profile-textbox">
             <div>
                 <p class="english-name">Profile</p>
                 <p class="name">プロフィール</p>
             </div>
             <div>
                 <p class="name">
-                    1996年生まれ。2018年に臨床検査技師学科を卒業。<br>
+                    1996年生まれ。<br>
+                    2018年に臨床検査技師学科を卒業。<br>
+                    2年間病院勤めを経て、プログラマーへの道を志望する。
                 </p>
             </div>
         </div>
     </div>
- 
+    
+
     <div class="cd-fixed-bg cd-bg-2" id="PORTFOLIO">
-        <h1>見出し</h1>
+        <div class="cd-container">
+            <p>
+                <h1 class="about fade-in-bottom" >
+                    PORTFOLIO
+                </h1>
+            </p>
+        </div> 
+        <div class="item-mainbox">
+            <ul class='item-lists'> 
+                <li class='list'>
+                    <%= link_to "https://furima-33511.herokuapp.com/", class: "default_link_none", target: :_blank do %>
+                    <div class='item-img-content'>
+                        <%= image_tag "image1.png", class: "item-img" %>
+                    </div>
+                    <div class='item-info'>
+                        <h3 class='item-name'>
+                        </h3>
+                    </div>
+                    <% end %>
+                </li>
+                <li class='list'>
+                    <%= link_to "https://jewel-33511.herokuapp.com/", class: "default_link_none", target: :_blank do %>
+                    <div class='item-img-content'>
+                        <%= image_tag "image2.png", class: "item-img" %>
+                    </div>
+                    <div class='item-info'>
+                        <h3 class='item-name'>
+                        </h3>
+                    </div>
+                    <% end %>
+                </li>
+            </ul>
+        </div>
     </div> 
-  
+
     <div class="cd-scrolling-bg cd-color-2" id="CONTACT">
         <div class="cd-container">
             <p>
-                コンテンツ
+                <h1 class="about fade-in-bottom" >
+                    CONTACT
+                </h1>
             </p>
         </div> 
+        <div class="connect-center cd-container">
+            <div class="contact-textbox">
+                <%= image_tag 'twitter-logo.png', class: "twitter-icon" %>
+                <p class="contact-text">
+                    @NoYah_s<br>
+                </p>
+            </div>
+        </div>
+        <div class="footer-box">
+        </div>
     </div> 
 </main>
