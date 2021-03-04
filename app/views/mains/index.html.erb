@@ -3,9 +3,12 @@
     <div class='main-menu'>
         <ul class="menu-list">
             <li><a href="#TOP">TOP</a></li>
+        </ul>
+        <ul class="menu-list">
             <li><a href="#ABOUT">ABOUT</a></li>
             <li><a href="#PORTFOLIO">PORTFOLIO</a></li>
             <li><a href="#CONTACT">CONTACT</a></li>
+            <li><a href="#CONTACT">BLOG</a></li>
         </ul>
     </div>
 </div> 
@@ -16,68 +19,93 @@
     </div> 
 
 
-    <div class="cd-scrolling-bg cd-color-1" id="ABOUT">
-        <div class="cd-container">
-            <h1 class="about fade-in-bottom" >
+    <div class="cd-scrolling-bg cd-color-1 display-flex" id="ABOUT">
+        <div class="main-title">
+            <h1 class="title tate" >
                 ABOUT
             </h1>
         </div>
         <div class="comment profile-textbox">
-            <div>
+            <div class='cd-container'>
                 <p class="english-name">Profile</p>
                 <p class="name">プロフィール</p>
-            </div>
-            <div>
+                <br>
                 <p class="name">
                     1996年生まれ。<br>
                     2018年に臨床検査技師学科を卒業。<br>
-                    2年間病院勤めを経て、プログラマーへの道を志望する。
+                    2年間病院勤めを経て、プログラマーへの道を志望する。<br>
+                    幼い頃からクリエイティブなことが好きで、革製品加工やアクセサリー作成、CGグラフィック。<br>
+                    多くのことを趣味として体験し、自分はやっぱり物づくりが大好きだと再確認できた。<br>
+                    物づくりへの熱意、こだわり、妥協なき努力。<br>
+                    その全てを持って技術提供者として、社会に貢献していきたい。
+                </p>
+                <p class="english_small">
+                Born in 1996. <br>
+                Graduated from the Department of Clinical Laboratory Technicians in 2018. <br>
+                After working at a hospital for 2 years, he aspires to become a programmer. <br>
+                I've loved being creative since I was little,<br>
+                and I've been working on leather products, making accessories, and CG graphics. <br>
+                After experiencing many things as a hobby, I was able to reconfirm that I love making things. <br>
+                Enthusiasm for manufacturing, commitment, and uncompromising efforts. <br>
+                With all of this, I would like to contribute to society as a technology provider.
                 </p>
             </div>
         </div>
     </div>
     
 
-    <div class="cd-fixed-bg cd-bg-2" id="PORTFOLIO">
-        <div class="cd-container">
-            <p>
-                <h1 class="about fade-in-bottom" >
-                    PORTFOLIO
-                </h1>
-            </p>
+    <div class="cd-fixed-bg cd-bg-2 display-flex between" id="PORTFOLIO">
+        <div class="main-title">
+            <h1 class="title tate" >
+                PORTFOLIO
+            </h1>
         </div> 
-        <div class="item-mainbox">
+        <div class="portfolio-box">
             <ul class='item-lists'> 
                 <li class='list'>
-                    <%= link_to "https://furima-33511.herokuapp.com/", class: "default_link_none", target: :_blank do %>
-                    <div class='item-img-content'>
-                        <%= image_tag "image1.png", class: "item-img" %>
+                    <div class="hover">
+                        <%= link_to "https://furima-33511.herokuapp.com/", class: "default_link_none", target: :_blank do %>
+                            <%= image_tag "image1.png", class: "item-img" %>
+                                <div class="hover-text">
+                                    <p class="text1">JeweLinks</p>
+                                    <p class="text2">宝石の魅力を知ってもらいたい！<br>
+                                    身近に感じてもらいたい！<br>
+                                    たくさんの種類を知ってもらいたい！<br>
+                                    そんな思いから宝石専門フリマサイトを<br>作成しました。</p>
+                                </div>
+                        <% end %>
                     </div>
-                    <div class='item-info'>
-                        <h3 class='item-name'>
-                        </h3>
-                    </div>
-                    <% end %>
                 </li>
                 <li class='list'>
-                    <%= link_to "https://jewel-33511.herokuapp.com/", class: "default_link_none", target: :_blank do %>
-                    <div class='item-img-content'>
-                        <%= image_tag "image2.png", class: "item-img" %>
+                    <div class="hover">
+                        <%= link_to "https://jewel-33511.herokuapp.com/", class: "default_link_none", target: :_blank do %>
+                            <%= image_tag "image2.png", class: "item-img" %>
+                                <div class="hover-text">
+                                    <p class="text1">FRIMA</p>
+                                    <p class="text2">手軽に使えるフリマサイト！</p>
+                                </div>
+                        <% end %>
                     </div>
-                    <div class='item-info'>
-                        <h3 class='item-name'>
-                        </h3>
+                </li>
+                <li class='list'>
+                    <div class="hover">
+                        <%= link_to "#", class: "default_link_none" do %>
+                            <%= image_tag "comingsoon.png", class: "item-img" %>
+                                <div class="hover-text">
+                                    <p class="text1">Python application</p>
+                                    <p class="text2">開発環境：Django</p>
+                                </div>
+                        <% end %>
                     </div>
-                    <% end %>
                 </li>
             </ul>
         </div>
     </div> 
 
-    <div class="cd-scrolling-bg cd-color-2" id="CONTACT">
-        <div class="cd-container">
+    <div class="cd-scrolling-bg cd-color-2 display-flex" id="CONTACT">
+        <div class="main-title">
             <p>
-                <h1 class="about fade-in-bottom" >
+                <h1 class="title tate" >
                     CONTACT
                 </h1>
             </p>
@@ -90,7 +118,8 @@
                 </p>
             </div>
         </div>
-        <div class="footer-box">
-        </div>
-    </div> 
+    </div>
+    <div class="footer-box">
+        © allrights reserved  NoYah
+    </div>
 </main>

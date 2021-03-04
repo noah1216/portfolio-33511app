@@ -119,18 +119,19 @@ background-image: url("home-main-image.png");
 
 
 .cd-container{
-  padding: 40px 200px;
+  padding: 60px 0 0 100px ;
 }
 
 .profile-textbox{
-  padding: 40px 250px;
+  padding: 40px 0;
 }
 
-.about{
-  color: rgb(156, 140, 85);
-  font-size: 60px;
-  text-align: center;
-  letter-spacing: 7px;
+.display-flex{
+  display: flex;
+}
+
+.between{
+  justify-content: space-between;
 }
 
 .comment{
@@ -144,38 +145,90 @@ background-image: url("home-main-image.png");
 }
 
 .english-name{
-  font-size: 30px;
+  font-size: 25px;
   padding-top: 30px;
   letter-spacing: 5px;
 }
 
 .name{
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 5px;
 }
 
+.english_small{
+  margin-top: 30px;
+  font-size: 11px;
+  letter-spacing: 3px;
+}
 
-
-
+.portfolio-box{
+  margin-right: 40px;
+}
 
 .item-lists {
-  width: 100vw;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-evenly;
+  padding-top: 100px
 }
 
 
 
 .item-lists>.list {
   padding: 1vw;
-  width: 25%;
-  text-align: center;
+}
+
+.hover {
+  position: relative;
+  height: 230px;
+  width: 350px;
+}
+
+.hover .default_link_none {
+  margin: 0;
+  padding: 0;
 }
 
 .item-img{
   height: 250px;
+  width: 100%;
+  height: 100%;
 }
+
+.item-img:hover{
+  opacity: 0.6;
+  filter: alpha(opacity=50);
+}
+
+.hover .hover-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: #fff;
+  background-color: rgba(0,0,0,0.65);
+  opacity: 0;
+  transition: .3s ease-in-out;
+}
+.hover .hover-text .text1 {
+  font-size: 22px;
+  padding: 10px 20px;
+}
+.hover .hover-text .text2 {
+  font-size: 16px;
+  padding: 0 20px;
+}
+
+.hover:hover .hover-text {
+  opacity: 1;
+}
+
+
+
+Resources
+
 
 .contact-textbox{
   display: flex;
@@ -194,5 +247,27 @@ background-image: url("home-main-image.png");
 
 
 
+.tate{
+  -ms-writing-mode: tb-rl;
+	writing-mode: vertical-rl;
+  text-orientation: sideways;
+}
 
+.title{
+  color: rgb(156, 140, 85);
+  margin: 0 70px;
+  text-align: center;
+  font-size: 25px;
+  letter-spacing: 5px;
+}
 
+.main-title{
+  display: flex;
+  text-align: center;
+}
+
+.footer-box{
+  padding-bottom: 30px;
+  text-align: center;
+  letter-spacing: 3px;
+}
